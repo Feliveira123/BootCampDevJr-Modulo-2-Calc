@@ -22,7 +22,7 @@ function calc(op){
 
     document.getElementById("output").value = output;
 
-    let newHistory = "<div>" + num1 + " " + op + " " + num2 + " " + "=" + " " + output + "</div>";
+    let newHistory = "<p>" + num1 + " " + op + " " + num2 + " " + "=" + " " + output + "</p>";
     let history = document.getElementById("history");
 
     history.innerHTML = newHistory + history.innerHTML;
