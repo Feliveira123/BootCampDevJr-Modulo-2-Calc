@@ -21,4 +21,13 @@ function calc(op){
     }
 
     document.getElementById("output").value = output;
+
+    let newHistory = "<div>" + num1 + " " + op + " " + num2 + " " + "=" + " " + output + "</div>";
+    let history = document.getElementById("history");
+
+    history.innerHTML = newHistory + history.innerHTML;
+
+    if(history.children.length > 10){
+        history.removeChild(history.childNodes[10]);
+    }
 }
